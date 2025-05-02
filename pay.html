@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Cycle: Zero Waste </title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="pay.css">
+    
+    
+
+</head>
+<body>
+
+<!--Header section start-->
+<header>
+    <a href="#" class="logo">
+        <img src="logo.png" width="69" height="44" alt="site logo">
+      </a>
+
+    <nav class="navbar">
+        <a class="active" href="./home.html">Home</a>
+        <a href="./buy.html">Buy</a>
+        <a href="#" onclick="openAbout()">About</a>
+        <a href="ed.html">Educational Resources</a>
+        <a href="./contact.html" >Contact us</a>
+        <a href="faq.html">FAQ's</a>
+        <!-- <a class="feed" id="feedback">feedback</a> -->
+        <a href="Review.html">Reviews</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        
+        
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+           
+        
+        <a href="login.html" class="fas fa-sign-in-alt"></a>
+        
+    </div>
+</header>
+    <!--search form-->
+    <form action="" id="search-form">
+      <input type="search" placeholder="search here..." name="" id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close1"></i>
+  </form>
+  <!--Search Form ends-->
+  </header>
+
+
+<!-- Header section ends-->
+
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="City">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="India">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="Images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Exp month :</span>
+                    <input type="text" placeholder="Exp. Month">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <!-- <input type="submit" value="proceed to checkout" class="submit-btn"> -->
+        <button onclick="validation();" class = "submit-btn">Pay</button>
+
+    </form>
+
+</div>    
+
+<div id="about" class="about">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="about-overlay">
+          <h1>About us</h1>
+          <!-- <p>Launched in 2021, Our technology platform connects customers,<br> 
+          restaurant partners and delivery partners, serving their multiple needs. <br>
+          Customers use our platform to search and discover restaurants, read and write customer 
+          generated reviews and view and upload photos,<br> order food delivery, book a table and make 
+          payments while dining-out at restaurants. On the other hand,<br> we provide restaurant partners 
+          with industry-specific marketing tools which enable them to engage and acquire customers<br> to 
+          grow their business while also providing a reliable <br>and efficient last mile delivery service. 
+          We also operate a one-stop procurement solution, <br>Hyperpure, which supplies high quality ingredients 
+          and kitchen products to restaurant partners.<br> We also provide our delivery partners with transparent 
+          and flexible earning opportunities. </p> -->
+          <p> Welcome to Eco-Cycle: Zero Waste , where we believe in turning waste into opportunity.
+            Founded with a vision to make a significant impact on environmental sustainability, we are committed to revolutionizing the way waste is perceived and managed.
+            <br>
+            <br>
+            <br>
+
+
+            We understand the growing concern surrounding the improper handling of
+            electronic waste and its detrimental effects on both human health and
+            the environment. With our expertise in e-waste management, we offer
+            comprehensive solutions to individuals, businesses, and communities,
+            ensuring that their electronic devices are handled and disposed of
+            responsibly.
+            <br>
+            <br>
+            <br>
+Our Mission
+At Eco-Cycle: Zero Waste, our mission is simple yet powerful: to promote a circular economy by providing a platform for buying and
+<br>
+<br>
+selling recycled waste materials. We strive to foster a community where waste becomes a valuable resource, driving innovation and sustainable practices 
+across industries.
+<br>
+<br>
+<br>
+What We Offer
+We offer a comprehensive marketplace for individuals, businesses, and organizations to buy and sell various types of recycled waste materials. 
+Whether you're looking to source recycled plastics, paper, metals, glass, or other materials, you'll find a diverse range of options on our platform.
+</p>
+      </div>
+  </div>
+  
+ 
+  <script>
+    let menu = document.querySelector('#menu-bars');
+       let navbar = document.querySelector('.navbar');
+       
+       menu.onclick = () => {
+           menu.classList.toggle('fa-times');
+           navbar.classList.toggle('active');
+       }
+       window.onscroll=() => {
+           menu.classList.remove('fa-times');
+           navbar.classList.remove('active');
+       }
+       document.querySelector('#search-icon').onclick=() => {
+           document.querySelector('#search-form').classList.toggle('active');
+   
+       }
+       function openAbout(){
+       document.getElementById("about").style.width = "100%";
+
+   }
+   function closeNav(){
+       document.getElementById("about").style.width = "0%";
+   }
+</script>
+
+
+<script type = "text/javascript">
+    function validation()
+    {
+       let value =  prompt("Are you Sure","yes/No");
+       if(value == "yes"){
+        alert("Your Payment is Done");
+       }else{
+        alert("Fill Again");
+       }
+    }
+    
+</script>
+    
+</body>
+</html>
